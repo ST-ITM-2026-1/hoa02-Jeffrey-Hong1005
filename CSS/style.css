@@ -531,6 +531,8 @@ nav a.active {
     font-weight: bold;
 }
 
+
+/* --- dark mode ----*/
 body.dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
