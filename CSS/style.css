@@ -320,7 +320,7 @@ li.lists{
     gap: 30px;
     flex-wrap: wrap;
 
-    
+
 }
 
 .Repo {
@@ -482,14 +482,140 @@ footer {
     margin: 0 auto;
 }
 
-.bottom {
+.footerHead {
+    color: white;
+    font-size: 23px;
     text-align: center;
+    margin: 0;
+    padding:  10px 0 0 0;
+}
+
+.bottom {
+    display : flex;
+    align-items: center;
     font-size: 18px;
     color: white;
-    align-items: flex-start;
+    
+}
+
+.bottom span {
+    flex: 1;
+}
+
+.bottom p {
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    margin: 10px 33%;
+}
+
+.mode {
+    flex: 1;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+    background-color: #444;
+    border: 2px solid #888;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.mode:hover {
+    background-color: #666;
+}
+
+nav a.active {
+    color: #FFD700;
+    font-weight: bold;
+    border-bottom: 2px solid #FFD700;
+}
+
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .Title {
+    background-color: #0f3460;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode li {
+    color: #e0e0e0;
+}
+
+body.dark-mode .header-top {
+    border-bottom-color: #4a9eda;
+}
+
+body.dark-mode .middle-top {
+    border-bottom-color: #4a9eda;
+}
+
+body.dark-mode .content {
+    background-color: #16213e;
+    color: #e0e0e0;
+    border-left-color: #4a9eda;
+}
+
+body.dark-mode .content-skills {
+    background-color: #16213e;
+    color: #e0e0e0;
+    border-color: #4a9eda;
+}
+
+body.dark-mode .profile-content {
+    background-color: #16213e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .Repo-intro {
+    background-color: #16213e;
+    color: #e0e0e0;
+    border-color: #4a9eda;
+}
+
+body.dark-mode .contact-info {
+    background-color: #16213e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .contact-content {
+    background-color: #16213e;
+    color: #e0e0e0;
+    border-color: #4a9eda;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #0f3460;
+    color: #e0e0e0;
+    border-color: #4a9eda;
+}
+
+body.dark-mode .contact-now {
+    background-color: #0f3460;
+    border-color: #4a9eda;
+    color: #e0e0e0;
+}
+
+body.dark-mode .sub {
+    background-color: transparent;
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+body.dark-mode .ID a {
+    color: #e0e0e0;
 }
 
 
+/* ---- media ----*/
 
 @media(max-width: 768px){
     .Title {
