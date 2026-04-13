@@ -1,13 +1,12 @@
 function toggleTheme() {
     document.body.classList.toggle('dark-mode');
 
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
     const modeButtons = document.querySelectorAll('.mode');
     modeButtons.forEach(function(btn) {
-        if (document.body.classList.contains('dark-mode')) {
-            btn.textContent = 'Light Mode';
-        } else {
-            btn.textContent = 'Dark Mode';
-        }
+        btn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
     });
 }
 
@@ -213,6 +212,13 @@ function displayRepos(repos) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        document.querySelectorAll('.mode').forEach(function(btn) {
+            btn.textContent = 'Light Mode';
+        });
+    }
+
     const modeButtons = document.querySelectorAll('.mode');
     modeButtons.forEach(function(btn) {
         btn.addEventListener('click', toggleTheme);
