@@ -119,15 +119,17 @@ h2 {
 
 }
 
-.projects-buttons button:hover {
-    
-    padding: 10px 20px;
-    font-size: 25px;
-    border: none;
-    border-radius: 5px;
-    border-color: white;
-    background-color: gray;
+.projects-buttons button {
+    transition: transform 0.2s ease;
+}
 
+.projects-buttons button:hover {
+    transform: scale(1.12);
+}
+
+.projects-buttons button.active-btn {
+    outline: 3px solid white;
+    outline-offset: 3px;
 }
 
 .project-text{
